@@ -57,7 +57,7 @@ class eZSimpleSelectionType extends eZDataType {
     */
     function eZSimpleSelectionType() {
         $this->eZDataType(self::DATATYPESTRING,
-                            ezi18n('extension/datatypes', "Simple Selection",
+                            ezpI18n::tr('extension/datatypes', "Simple Selection",
                                     'Datatype name' ),
                            array( 'serialize_supported' => true,
                                   'object_serialize_map' => array( 'data_text' => 'text' )));
